@@ -1,0 +1,119 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/shape_date_picker_bg"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/confirmACBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="start|center_vertical"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:text="@string/confirmDatePicker"
+                android:textColor="@color/accentColorDatePicker"
+                android:textSize="@dimen/headerDatePickerFontSize"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/cancelACBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="end|center_vertical"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:text="@string/cancelDatePicker"
+                android:textColor="@color/textColorSecondaryDatePicker"
+                android:textSize="@dimen/headerDatePickerFontSize" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:text="@string/datePickerTitle"
+            android:textColor="@color/textColorSecondaryDatePicker"
+            android:textSize="@dimen/headerDatePickerFontSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="@string/yourTime"
+            android:textColor="@color/textColorPrimaryDatePicker"
+            android:textSize="@dimen/normalDatePickerFontSize" />
+
+        <TextView
+            android:id="@+id/dateTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/accentColorDatePicker"
+            android:textSize="@dimen/normalDatePickerFontSize" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/dateRv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/shape_date_picker" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/dividerColorDatePicker" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/timeRv"
+                android:layout_width="match_parent"
+                android:layout_height="228dp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/shape_date_picker" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

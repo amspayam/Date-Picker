@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="normalDatePickerFontSize">12sp</dimen>
+    <dimen name="headerDatePickerFontSize">13sp</dimen>
+    <dimen name="horizontalPadding">140dp</dimen>
+    <dimen name="verticalPadding">88dp</dimen>
+    <dimen name="margin">4dp</dimen>
+</resources>

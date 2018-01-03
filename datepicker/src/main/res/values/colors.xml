@@ -1,0 +1,15 @@
+<resources>
+    <!--material colors-->
+    <color name="primaryColorDatePicker">#FFF</color>
+    <color name="primaryColorDarkDatePicker">#FCFCFC</color>
+    <color name="accentColorDatePicker">#2CB790</color>
+    <!--===========================================================================-->
+    <!--base colors-->
+    <color name="transparent">#00000000</color>
+    <color name="whiteDatePicker">#FFF</color>
+    <color name="dividerColorDatePicker">#dedede</color>
+    <!--===========================================================================-->
+    <!--view colors-->
+    <color name="textColorPrimaryDatePicker">#444</color>
+    <color name="textColorSecondaryDatePicker">#888</color>
+</resources>

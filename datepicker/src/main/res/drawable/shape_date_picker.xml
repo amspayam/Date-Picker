@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Describes the line -->
+    <item>
+        <shape>
+            <size
+                android:width="98dp"
+                android:height="36dp" />
+            <corners android:radius="36dp" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/accentColorDatePicker" />
+        </shape>
+    </item>
+</layer-list>

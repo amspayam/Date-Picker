@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="DialogAnimationDatePicker">
+        <item name="android:windowEnterAnimation">@anim/slide_up_date_picker</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_date_picker</item>
+    </style>
+
+</resources>

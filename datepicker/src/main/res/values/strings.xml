@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Date Picker</string>
+    <string name="datePickerTitle">ساعت و تاریخ حضور متخصص را مشخص کنید</string>
+    <string name="yourTime">زمان مورد نظر شما</string>
+    <string name="confirmDatePicker">تایید</string>
+    <string name="cancelDatePicker">لغو</string>
+</resources>
