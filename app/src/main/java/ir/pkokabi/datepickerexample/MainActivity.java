@@ -8,6 +8,7 @@ import android.view.View;
 
 import ir.pkokabi.datepicker.DialogDatePicker;
 
+
 public class MainActivity extends AppCompatActivity implements DialogDatePicker.DatePickerInterface {
 
     Context context;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements DialogDatePicker.
 
     @Override
     public void onDateSelect(String date, String dateTime, String time, int hour, int minute, int dateDifference) {
-        
+
     }
+
 }

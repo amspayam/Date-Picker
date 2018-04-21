@@ -104,7 +104,7 @@
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/timeRv"
                 android:layout_width="match_parent"
-                android:layout_height="228dp" />
+                android:layout_height="288dp" />
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_width="wrap_content"

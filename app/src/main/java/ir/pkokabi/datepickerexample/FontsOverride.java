@@ -36,23 +36,6 @@ public class FontsOverride {
             e.printStackTrace();
         }
     }
-
-    public void setTextViewFont(String fontName, TextView view) {
-        Typeface tf = getTypeface(AppController.getInstance()
-                .getApplicationContext(), fontName);
-        if (tf != null) {
-            view.setTypeface(tf);
-        }
-    }
-
-    public void setEditTextFont(String fontName, AppCompatEditText view) {
-        Typeface tf = getTypeface(AppController.getInstance()
-                .getApplicationContext(), fontName);
-        if (tf != null) {
-            view.setTypeface(tf);
-        }
-    }
-
     private Typeface getTypeface(Context context, String font) {
         Typeface tf = fontCache.get(font);
         if (tf == null) {
