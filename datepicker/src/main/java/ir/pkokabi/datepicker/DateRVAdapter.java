@@ -1,6 +1,7 @@
 package ir.pkokabi.datepicker;
 
 import android.databinding.DataBindingUtil;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +18,7 @@ import ir.pkokabi.datepicker.databinding.ItemDateBinding;
 
 class DateRVAdapter extends RecyclerView.Adapter<DateRVAdapter.ViewHolder> {
 
-    private ArrayList<DateTimeM> dateList = new ArrayList<>();
+    private ArrayList<DateTimeM> dateList;
     private DateInterface dateInterface;
 
     DateRVAdapter(ArrayList<DateTimeM> dateList, DateInterface dateInterface) {
@@ -36,7 +37,7 @@ class DateRVAdapter extends RecyclerView.Adapter<DateRVAdapter.ViewHolder> {
             binding.getRoot().setOnClickListener(this);
         }
 
-        public void bind(DateTimeM item) {
+        void bind(DateTimeM item) {
             binding.dateTv.setText(item.getDateTimeName());
 
             binding.executePendingBindings();
@@ -48,8 +49,9 @@ class DateRVAdapter extends RecyclerView.Adapter<DateRVAdapter.ViewHolder> {
         }
     }
 
+    @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         ItemDateBinding binding = DataBindingUtil
                 .inflate(LayoutInflater.from(parent.getContext()), R.layout.item_date, parent, false);
 
@@ -57,7 +59,7 @@ class DateRVAdapter extends RecyclerView.Adapter<DateRVAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.bind(dateList.get(position));
     }
 
@@ -67,7 +69,7 @@ class DateRVAdapter extends RecyclerView.Adapter<DateRVAdapter.ViewHolder> {
     }
 
     @Override
-    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
     }
 
